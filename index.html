@@ -5,62 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enjoy Cursos</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/transition.css">
-
+    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="styles/slider.css">
+    <script defer src="scripts/btn-eventos.js"></script>
 </head>
 <body>
-    <main>
-        <header class="topo">
-            <div class="logo"><a href="index.html"><img src="images/logo_enjoycursos.png" alt=""></a></div>
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="work.html">Categorias</a></li>
-                        <li><a href="work.html">Sobre</a></li>
-                        <li><a href="work.html">Serviços e Facilidades</a></li>
-                        <li><a href="work.html">Ajuda</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <article>
+    <header class="cabecalho">
+        <div class="logo"><a href=""><img src="images/logo_enjoycursos.png" alt="Logo Enjoy-Cursos"></a></div>
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li><a href="">Início</a></li>
+                <li><a href="">Categorias</a></li>
+                <li><a href="">Certificações</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Facilidades</a></li>
+                <li><a href="">Ajuda</a></li>
+            </ul>
+        </nav>
+        <button class="menu-btn"></button>
+    </header>
+    <article>
+        <header>
             <section class="slider-show">
-                <div class="slider-show-container">
-                    <input type="radio" name="btn-slider" id="btn-slider1">
-                    <input type="radio" name="btn-slider" id="btn-slider2">
-                    <input type="radio" name="btn-slider" id="btn-slider3">
-
-                    <div class="slider-box-images slidershow-one">
-                        <a href="work.html"><img class="slider-image-desktop" src="images/slide-item1.png" alt=""></a>
+                <div class="slider-container">
+                    <div class="slider-box-imagem">
+                        <a href=""><img src="images/slide-item1.png" alt=""></a>
                     </div>
-                    <div class="slider-box-images slidershow-two">
-                        <a href="work.html"><img class="slider-image-desktop" src="images/slide-item2.png" alt=""></a>
-                    </div>
-                    <div class="slider-box-images slidershow-three">
-                        <a href="work.html"><img class="slider-image-desktop" src="images/slide-item3.png" alt=""></a>
-                    </div>
-
-                    <div class="nav-auto">
-                        <div class="btn-auto1"></div>
-                        <div class="btn-auto2"></div>
-                        <div class="btn-auto3"></div>
-                    </div>
-
-                    <div class="nav-manual">
-                        <label for="btn-slider1" class="btn-manual"></label>
-                        <label for="btn-slider2" class="btn-manual"></label>
-                        <label for="btn-slider3" class="btn-manual"></label>
-                    </div>
-            </div>
+                </div>
             </section>
-
-        </article>
-        <footer>
-
-        </footer>
-    </main>
-
-    <script src="scripts/slidershow.js"></script>
+        </header>
+    </article>
+    
 </body>
 </html>
