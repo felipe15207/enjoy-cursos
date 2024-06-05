@@ -139,11 +139,11 @@ header.cabecalho {
 
   .curso a {
     text-decoration: none;
-    color: black;
-    background-color: rgb(36, 219, 0);
+    color: #FFF;
+    background-color: #010175;
     padding: 10px;
     border-radius: 10px;
-    border: 2px solid rgb(26, 156, 0);
+    border: 2px solid #000048;
     box-shadow: 1px 1px 9px ;
     display: block;
     margin-top: 10px;
@@ -152,6 +152,7 @@ header.cabecalho {
 
 /*rodape da pagina*/
 footer {
+    margin-top: 10px;
     background-color: #333;
     color: #fff;
     text-align: center;

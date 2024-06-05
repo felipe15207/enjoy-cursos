@@ -10,5 +10,3 @@ logobtn.addEventListener("click", () => menu.classList.toggle("active"));
 
 
 //codigo slider
-
-
