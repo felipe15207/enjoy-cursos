@@ -1,0 +1,17 @@
+/* cabeçalho */
+
+.logo {
+  width: 300px;
+  font-size: 26px;
+}
+
+nav.menu {
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+  }
+
+.menu-lista {
+    justify-content: space-evenly;
+}

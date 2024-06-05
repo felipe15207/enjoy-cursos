@@ -12,7 +12,7 @@ body {
 
 header.cabecalho {
     background-color: #010175;
-    padding-inline: 16px;
+    position: relative;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -20,20 +20,32 @@ header.cabecalho {
 
 header.cabecalho {
     width: 100%;
-    height: 98px;
+    height: 125px;
     margin-inline: auto;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    font-size: 48px;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: calc(20% - 25px);;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.logo img {
-    width: 98px;
+.logo-img img {
+    width: 100px;
     height: auto;
+}
+
+.logo p {
+  color: #FFF;
+  text-align: center;
 }
 
 .menu-lista {
@@ -45,11 +57,11 @@ header.cabecalho {
 .menu-lista a {
     text-decoration: none;
     color: #FFF;
-    padding-block: 16px;
+    padding-block: 3px;
 }
 
 .menu-lista a:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid white;
 }
 
 .menu-btn {
@@ -69,53 +81,26 @@ header.cabecalho {
     margin-top: 5px;
 }
 
-@media (max-width: 768px) {
-    .menu-btn {
-        display: block;
-        z-index: 1;
-    }
+.user-container {
+  position: absolute;
+  background: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  top: calc(40% - 25px);
+  right: 25px;
+  border-radius: 50%;
+  display: flex;
+}
 
-    .menu-lista {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: #010175;
-        clip-path: circle(100px at 90% -15%);
-        transition: 1s ease-out;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 0;
-        pointer-events: none;
-    }
+.user-container:hover {
+  background-color: white;
+}
 
-    .menu-lista a {
-        font-size: 24px;
-        opacity: 0;
-    }
-
-    .menu-lista li:nth-child(1) a {
-        transition: 0.5s 0.2s;
-    }
-
-    .menu-lista li:nth-child(2) a {
-        transition: 0.5s 0.4s;
-    }
-
-    .menu-lista li:nth-child(3) a {
-        transition: 0.5s 0.6s;
-    }
-
-    .menu.active .menu-lista {
-        clip-path: circle(1500px at 90% -15%);
-        pointer-events: all;
-    }
-
-    .menu.active .menu-lista a {
-        opacity: 1;
-    }
+.user-container img{
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 /*botao de login ou cadastro*/
@@ -128,11 +113,6 @@ header.cabecalho {
     flex-wrap: wrap;
     margin-top: 20px;
   }
-
-@media (max-width: 768px) {
-  .feed {
-    justify-content: center;
-}}
   
   .curso {
     width: 500px;

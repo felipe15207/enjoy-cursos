@@ -1,6 +1,75 @@
+/* Cabeçalho */
+
+.logo {
+  width: 150px;
+  font-size: 14px;
+  top: calc(32% - 25px);;
+}
+
+.logo-img img {
+  width: 70px;
+  height: auto;
+}
+
+.menu-btn {
+  display: block;
+  z-index: 1;
+  position: absolute;
+  left: 25px;
+  top: calc(62% - 25px);
+}
+
+.menu-lista {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #010175;
+  clip-path: circle(100px at 5% -20%);
+  transition: 1s ease-out;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  pointer-events: none;
+}
+
+.menu-lista a {
+  font-size: 24px;
+  opacity: 0;
+}
+
+.menu-lista li:nth-child(1) a {
+  transition: 0.5s 0.2s;
+}
+
+.menu-lista li:nth-child(2) a {
+  transition: 0.5s 0.4s;
+}
+
+.menu-lista li:nth-child(3) a {
+  transition: 0.5s 0.6s;
+}
+
+.menu.active .menu-lista {
+  clip-path: circle(1500px at 10% -15%);
+  pointer-events: all;
+}
+
+.menu.active .menu-lista a {
+  opacity: 1;
+}
+
+.user-container {
+  top: calc(50% - 25px);
+}
 
 /*conteudo principal da pagina*/
 
+.feed {
+  justify-content: center;
+}
 
 /*rodape da pagina*/
 
