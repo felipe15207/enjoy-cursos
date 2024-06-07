@@ -1,8 +1,3 @@
-<?php
-    if(isset()
-    )
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -43,7 +38,7 @@
         <div class="login-container" id="login-container">
             <div class="form-container">
                 <form action="" method="POST" class="form form-login">
-                    <h2 class="form-title">Entrar com</h2>
+                    <h2 class="form-title" id="title-entrar">Entrar</h2>
                     <!--<div class="form-social">
                         <a href="#" class="social-icon">
                             <i class="fab fa-facebook-f"></i>
@@ -57,17 +52,17 @@
                     </div>
                     <p class="form-text">ou utilize sua conta</p>-->
                     <div class="form-input-container">
-                        <input type="email" class="form-input" placeholder="Email">
-                        <input type="password" class="form-input" placeholder="Senha">
+                        <input type="email" class="form-input" placeholder="Email" required>
+                        <input type="password" class="form-input" placeholder="Senha" required>
                     </div>
                     <a href="#" class="form-link">Esqueceu a senha?</a>
                     <button type="submit" class="form-button">Entrar</button>
-                    <p class="mobile-text">
+                    <p class="mobile-text" id="text-ir-cadastro">
                         Não tem conta?
                         <a href="#" id="open-register-mobile">Registre-se</a>
                     </p>
                 </form>
-                <form class="form form-register">
+                <form class="form form-register" action="formulario.php" method="POST">
                     <h2 class="form-title">Criar Conta</h2>
                     <!--<div class="form-social">
                         <a href="#" class="social-icon">
@@ -82,12 +77,12 @@
                     </div>
                     <p class="form-text">ou cadastre seu email</p>-->
                     <div class="form-input-container">
-                        <input type="text" class="form-input" placeholder="Nome" required>
-                        <input type="email" class="form-input" placeholder="Email" required>
-                        <input type="text" class="form-input" placeholder="CPF" required>
-                        <input type="text" class="form-input" placeholder="Celular">
-                        <input type="date" class="form-input" placeholder="Data de nascimento" required>
-                        <input type="password" class="form-input" placeholder="Senha" required>
+                        <input type="text" class="form-input" name="nome" placeholder="Nome" maxlength="50" required>
+                        <input type="email" class="form-input" name="email" placeholder="Email" required>
+                        <input type="text" class="form-input" name="cpf" placeholder="CPF" required>
+                        <input type="tel" class="form-input" name="telefone" inputmode="numeric" placeholder="Telefone">
+                        <input type="date" class="form-input" name="datanascimento" placeholder="Data de nascimento" required>
+                        <input type="password" class="form-input" name="senha" placeholder="Senha" required>
                     </div>
                     <button type="submit" class="form-button">Cadastrar</button>
                     <p class="mobile-text">
