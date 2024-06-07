@@ -77,11 +77,11 @@
                     </div>
                     <p class="form-text">ou cadastre seu email</p>-->
                     <div class="form-input-container">
-                        <input type="text" class="form-input" name="nome" placeholder="Nome" maxlength="60" required>
+                        <input id="nome" type="text" class="form-input" name="nome" placeholder="Nome" maxlength="60" required>
                         <input type="email" class="form-input" name="email" placeholder="Email" required>
                         <input type="text" class="form-input" name="cpf" placeholder="CPF" required>
-                        <input type="tel" class="form-input" name="telefone" pattern="\d{2}\d{9}" inputmode="numeric" placeholder="Telefone">
-                        <input type="date" class="form-input" name="datanascimento" placeholder="Data de nascimento" required>
+                        <input type="tel" class="form-input" name="telefone" pattern="\d{2}\d{9}" inputmode="tel" placeholder="Telefone">
+                        <input type="date" class="form-input" name="datanascimento" inputmode="numeric" placeholder="Data de nascimento" required>
                         <input type="password" class="form-input" name="senha" placeholder="Senha" required>
                     </div>
                     <button type="submit" class="form-button">Cadastrar</button>
@@ -124,8 +124,11 @@
     </footer>
     
     <!--codigo login e cadastro-->
-    <script src="scripts/btn-eventos.js" defer >
+    <script src="scripts/eventos-login-cadastro.js" defer >
         
+    </script>
+    <script>
+
     </script>
 </body>
 </html>
