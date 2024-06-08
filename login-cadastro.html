@@ -12,6 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
+    <!--codigo comum como menu e cabelho-->
+    <script src="scripts/btn-eventos.js" defer></script>
+    <!--codigo login e cadastro-->
+    <script src="scripts/eventos-login-cadastro.js" defer></script>
+    <!--Adição do jquery e maskplugin-->
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/jquery.mask.min.js"></script>
+    
 </head>
 <body>
     <header class="cabecalho">
@@ -52,8 +60,8 @@
                     </div>
                     <p class="form-text">ou utilize sua conta</p>-->
                     <div class="form-input-container">
-                        <input type="email" class="form-input" placeholder="Email" required>
-                        <input type="password" class="form-input" placeholder="Senha" required>
+                        <input type="email" name="email" class="form-input" placeholder="Email" required>
+                        <input type="password" name="senha" class="form-input" placeholder="Senha" inputmode="verbatim" required>
                     </div>
                     <a href="#" class="form-link">Esqueceu a senha?</a>
                     <button type="submit" class="form-button">Entrar</button>
@@ -79,12 +87,12 @@
                     <div class="form-input-container">
                         <input id="nome" type="text" class="form-input" name="nome" placeholder="Nome" maxlength="60" required>
                         <input type="email" class="form-input" name="email" placeholder="Email" required>
-                        <input type="text" class="form-input" name="cpf" placeholder="CPF" required>
-                        <input type="tel" class="form-input" name="telefone" pattern="\d{2}\d{9}" inputmode="tel" placeholder="Telefone">
-                        <input type="date" class="form-input" name="datanascimento" inputmode="numeric" placeholder="Data de nascimento" required>
-                        <input type="password" class="form-input" name="senha" placeholder="Senha" required>
+                        <input id="cpf" type="text" class="form-input" name="cpf" placeholder="CPF" required>
+                        <input id="telefone" type="tel" class="form-input" name="telefone" pattern="\d{2}\d{9}" inputmode="tel" placeholder="Telefone">
+                        <input id="datanascimento" type="text" class="form-input" name="datanascimento" inputmode="numeric" placeholder="Data de nascimento" required>
+                        <input type="password" class="form-input" name="senha" placeholder="Senha" inputmode="verbatim" required>
                     </div>
-                    <button type="submit" class="form-button">Cadastrar</button>
+                    <button type="submit" class="form-button" id="btn-cadastrar">Cadastrar</button>
                     <p class="mobile-text">
                         Já tem conta?
                         <a href="#" id="open-login-mobile">Login</a>
@@ -122,9 +130,6 @@
         </div>
         <p class="copyright">&copy; 2024 Enjoy Cursos</p>
     </footer>
-    
-    <!--codigo login e cadastro-->
-    <script src="scripts/eventos-login-cadastro.js" defer >
         
     </script>
     <script>
