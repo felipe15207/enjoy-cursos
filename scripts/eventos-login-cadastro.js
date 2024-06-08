@@ -19,7 +19,7 @@ $(document).ready(function() {
         },
         cpf: {
           required: true,
-          minlength: 11
+          minlength: 14
         },
         email: {
           required: true,
@@ -27,12 +27,11 @@ $(document).ready(function() {
         },
         telefone: {
           required: true,
-          minlength: 11
+          minlength: 15
         },
-        dataNascimento: {
+        datanascimento: {
           required: true,
-          dateISO: true,
-          minlength: 8
+          minlength: 10
         },
         senha: {
           required: true,
@@ -59,7 +58,7 @@ $(document).ready(function() {
         },
         datanascimento: {
           required: "Informe sua data de nascimento",
-          dateISO: "Informe a data no formato DD/MM/AAAA"
+          minlength: "Informe sua data de nascimento"
         },
         senha: {
           required: "Informe sua senha",
