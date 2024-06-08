@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enjoy Cursos</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width:768px)">
+    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width:769px)">
+    <link rel="stylesheet" href="styles/estilo-tela-login-cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!--codigo comum como menu e cabelho-->
+    <script src="scripts/btn-eventos.js" defer></script>
+    <!--codigo login e cadastro-->
+    <script src="scripts/eventos-login-cadastro.js" defer></script>
+    <!--Adição do jquery e maskplugin-->
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/jquery.mask.min.js"></script>
+    <script src="scripts/jquery.validate.min.js"></script>
+    
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo"><p>Enjoy</p><div class="logo-img"><a href="index.html"><img src="images/logo_enjoycursos.png" alt="Logo Enjoy-Cursos"></div></a><p>Cursos</p></div>
+
+        
+
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="">Categorias</a></li>
+                <li><a href="">Certificações</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Acessibilidade</a></li>
+                <li><a href="">Ajuda</a></li>
+            </ul>
+        </nav>
+        <button class="menu-btn"></button>
+
+        <button class="user-container"><a href="login-cadastro.html"><img src="images/user.png" alt="" title="Entre ou Cadastre-se"></a></button>
+    </header>
+
+    <main>
+        <div class="formulario-container">
+          <h3>Criar conta</h3>
+          <form id="formulario-cadastro" action="" method="POST">
+            <input type="text" id="nome" name="nome" placeholder="Nome" required>
+
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <input type="text" id="cpf" name="cpf" data-mask="000.000.000-00" placeholder="CPF" required>
+
+            <input type="text" id="telefone" name="telefone" data-mask="(99) 9999-9999" placeholder="Telefone" required>
+
+            <input type="text" id="datanascimento" name="datanascimento" data-mask="99/99/9999" placeholder="Data de nascimento" required>
+
+            <input type="password" id="senha" name="senha" placeholder="Senha" required>
+
+            <button id="btn-cadastrar" type="submit">Criar</button>
+
+          </form>
+          <p>Já tem uma conta? <a href="login.html">Faça login.</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <p>Endereço: 123 Rua Não sei, Cidade Irineu, País Brasil</p>
+          <p>Telefone: (00) 1234-5678</p>
+          <p>Email: contato@exemplo.com</p>
+        </div>
+        <p class="copyright">&copy; 2024 Enjoy Cursos</p>
+    </footer>
+        
+    </script>
+    <script>
+
+    </script>
+</body>
+</html>
