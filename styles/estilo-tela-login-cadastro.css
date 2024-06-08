@@ -229,12 +229,13 @@ transition: .7s;
 @media (max-width:768px) {
 
     #seila-senha {
-        margin-top: -40px;
-        margin-bottom: -15px;
+        margin-top: -60px;
+        margin-bottom: -25px;
     }
 
     #btn-entrar {
         margin-top: -25px;
+        margin-bottom: -25px;
     }
 
     #btn-cadastrar {
