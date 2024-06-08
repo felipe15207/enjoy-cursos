@@ -228,6 +228,15 @@ transition: .7s;
 
 @media (max-width:768px) {
 
+    #seila-senha {
+        margin-top: -40px;
+        margin-bottom: -15px;
+    }
+
+    #btn-entrar {
+        margin-top: -25px;
+    }
+
     #btn-cadastrar {
         margin-top: 25px;
         margin-bottom: 25px;
@@ -244,11 +253,6 @@ transition: .7s;
     #text-ir-cadastro {
         margin-top: -16px;
         margin-bottom: 1px;
-    }
-
-    .form-link {
-        margin-top: -32px;
-        margin-bottom: -12px;
     }
 
     .form-button {
