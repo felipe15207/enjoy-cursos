@@ -71,7 +71,7 @@
                     </p>
                 </form>
                 <form class="form form-register" action="formulario.php" method="POST">
-                    <h2 class="form-title">Criar Conta</h2>
+                    <h2 class="form-title" id="titulo-criarconta">Criar Conta</h2>
                     <!--<div class="form-social">
                         <a href="#" class="social-icon">
                             <i class="fab fa-facebook-f"></i>
@@ -87,9 +87,9 @@
                     <div class="form-input-container">
                         <input id="nome" type="text" class="form-input" name="nome" placeholder="Nome" maxlength="60" required>
                         <input type="email" class="form-input" name="email" placeholder="Email" required>
-                        <input id="cpf" type="text" class="form-input" name="cpf" placeholder="CPF" required>
-                        <input id="telefone" type="tel" class="form-input" name="telefone" pattern="\d{2}\d{9}" inputmode="tel" placeholder="Telefone">
-                        <input id="datanascimento" type="text" class="form-input" name="datanascimento" inputmode="numeric" placeholder="Data de nascimento" required>
+                        <input id="cpf" type="text" class="form-input" name="cpf" minlength="14" placeholder="CPF" required>
+                        <input id="telefone" type="text" class="form-input" name="telefone" minlength="15" inputmode="tel" placeholder="Telefone">
+                        <input id="datanascimento" type="text" class="form-input" name="datanascimento" minlength="10" inputmode="numeric" placeholder="Data de nascimento" required>
                         <input type="password" class="form-input" name="senha" placeholder="Senha" inputmode="verbatim" required>
                     </div>
                     <button type="submit" class="form-button" id="btn-cadastrar">Cadastrar</button>

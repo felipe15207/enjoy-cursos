@@ -229,30 +229,32 @@ transition: .7s;
 @media (max-width:768px) {
 
     #seila-senha {
-        margin-top: -60px;
-        margin-bottom: -25px;
+        margin-top: -70px;
+        margin-bottom: -45px;
     }
 
     #btn-entrar {
+        margin-top: -45px;
+        margin-bottom: -45px;
+    }
+
+    #btn-cadastrar {
         margin-top: -25px;
         margin-bottom: -25px;
     }
 
-    #btn-cadastrar {
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-
-    .form-title {
-        margin-top: -50px;
+    #titulo-criarconta {
+        margin-top: -100px;
+        margin-bottom: -40px;
     }
 
     #title-entrar {
-        margin-top: -100px;
+        margin-top: -120px;
+        margin-bottom: -90px;
     }
 
     #text-ir-cadastro {
-        margin-top: -16px;
+        margin-top: -45px;
         margin-bottom: 1px;
     }
 
