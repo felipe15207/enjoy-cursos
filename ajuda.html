@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enjoy Cursos</title>
+    <title>Ajuda - Enjoy Cursos</title>
+    <link rel="shortcut icon" href="images/logo-enjoycursos.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width:768px)">
     <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width:769px)">
-    <link rel="stylesheet" href="styles/slider.css">
-    <link rel="stylesheet" href="styles/slick.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/ajuda.css">
     <script src="scripts/jquery-3.7.1.min.js" defer></script>
-    <script src="scripts/slick.min.js" defer></script>
     <script src="scripts/btn-eventos.js" defer></script>
-    <script src="scripts/slider-home.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+    <script src="scripts/barra-pesquisa.js" defer></script>
+    <script src="scripts/sugestoes-ajuda.js" defer></script>
+
+    <style>
+      main h1 {
+        padding-inline-start: 28px;
+
+      }
+    </style>
 
 </head>
 <body>
@@ -40,6 +49,17 @@
     </header>
 
     <div class="conteudo-principal">
+      <main>
+        <section class="pesquisa-container">
+          <h1>Tem alguma dúvida a respeito da plataforma?</h1>
+          <div class="pesquisa">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder="Minha dúvida é...">
+            <div class="sugestoes"></div>
+            <div class="icon"><ion-icon name="search-outline"></ion-icon></div>
+          </div>
+        </section>
+      </main>
 
     </div>
 
