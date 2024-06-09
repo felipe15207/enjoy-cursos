@@ -9,9 +9,9 @@ $senha = $_POST['senha'];
 
 $server = 'localhost';
 $usuario = 'root';
-$senha = '';
+$senhabd = '';
 $database = 'enjoy_cursos_bd';
-$conectar_bd = new mysqli($server, $usuario, $senha, $database);
+$conectar_bd = new mysqli($server, $usuario, $senhabd, $database);
 
 if($conectar_bd->connect_error){
     die("Falha ao conectar ao banco de dados: ".$conectar_bd->connect_error);
