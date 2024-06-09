@@ -1,6 +1,9 @@
 <?php
 
-$host = "localhost";
+$
+
+
+/*$host = "localhost";
 $database = "enjoy_cursos_bd";
 $usuario = "root";
 $senha = "";
@@ -15,4 +18,5 @@ if($mysqli->error) {
     echo "Host: " . $mysqli->host . "\n";
     echo "Nome do banco de dados: " . $mysqli->dbname . "\n";
     echo "Charset: " . $mysqli->character_set_name() . "\n";
-}
+}*/
+?>
