@@ -29,13 +29,13 @@
 
             .apoio {
                 width: 40%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: auto;
-            float: right;
-        }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: auto;
+                float: right;
+            }
             
         }
 
@@ -55,6 +55,19 @@
             text-align: justify;
         }
 
+        .apoio {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: auto;
+            }
+
+        .apoio h3 {
+            font-weight: 900;
+            font-size: 28px;
+        }
+
         footer {
             clear: both;
         }
@@ -63,44 +76,49 @@
 </head>
 <body>
     <header class="cabecalho" style="clear: both;">
-      <div class="logo"><p>Enjoy</p><div class="logo-img"><a href="index.html"><img src="images/logo_enjoycursos.png" alt="Logo Enjoy-Cursos"></div></a><p>Cursos</p></div>
+      <div class="logo"><p>Enjoy</p><div class="logo-img"><a href="index.html"><img src="images/logo-enjoycursos.webp" alt="Logo Enjoy-Cursos"></div></a><p>Cursos</p></div>
 
         
 
         <nav class="menu">
             <ul class="menu-lista">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="">Categorias</a></li>
-                <li><a href="">Certificações</a></li>
-                <li><a href="">Chat de mensagens</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="certificados.html">Certificações</a></li>
+                <li><a href="chat-mensagens.html">Chat de mensagens</a></li>
                 <li><a href="sobre.html" style="border-bottom: 3px solid white;">Sobre</a></li>
-                <li><a href="">Ajuda</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
             </ul>
         </nav>
         <button class="menu-btn"></button>
 
         <button class="user-container"><a href="cadastro.html"><img src="images/user.png" alt="" title="Entre ou Cadastre-se"></a></button>
     </header>
-    <article>
-        <header>
-            <h1>Sobre o enjoy Cursos</h1>
-            
-        </header>
-        <main>
-                <h3>Um site de cursos que busca transmitir conhecimento</h3>
-                <p>Nós somos o Enjoy Cursos, um site de ensino a distância que desde o ano de 2024 está buscando o aprendizado de seus usuários através de tecncicas inovadoras de ensino com o intuito de atrair ainda mais a atenção deles. 
-                    Com a nossa gama de cursos, disponibilizamos uma grande variedade de escolhas para nossos usuários, desde um curso de como programar em Python, até um curso sobre como calcular “bhaskara”. 
-                    Nossa plataforma disponibiliza entre as suas principais características, um chat de mensagens, no qual o aluno pode interagir com um professor do curso, no qual pode-se tirar quaisquer dúvidas a respeito do curso e disponibilização de matériais de apoio para uma melhor experiência.
-                    </p>
+    <div class="conteudo-principal">
+        <article>
+            <header>
+                <h1>Sobre o enjoy Cursos</h1>
+                
+            </header>
+            <main>
+                    <h3>Um site de cursos que busca transmitir conhecimento</h3>
+                    <p>Nós somos o Enjoy Cursos, um site de ensino a distância que desde o ano de 2024 está buscando o aprendizado de seus usuários através de tecncicas inovadoras de ensino com o intuito de atrair ainda mais a atenção deles. 
+                        Com a nossa gama de cursos, disponibilizamos uma grande variedade de escolhas para nossos usuários, desde um curso de como programar em Python, até um curso sobre como calcular “bhaskara”. 
+                        Nossa plataforma disponibiliza entre as suas principais características, um chat de mensagens, no qual o aluno pode interagir com um professor do curso, no qual pode-se tirar quaisquer dúvidas a respeito do curso e disponibilização de matériais de apoio para uma melhor experiência.
+                        </p>
 
-                <h3>Nossa origem</h3>
-                <p>Fomos criados a partir de um projeto realizado pelos professores André e Reginaldo da ETE José Joaquim da Silva Filho, que tinha como principal objetivo apresentar para os alunos de forma teórica e prática, a organização e realização de um site com a utilização de HTML, CSS e Java Script, para as matérias semestrais de Engenharia de Software e Tecnologia em Desenvolvimento Web.</p>
-        </main>
+                    <h3>Nossa origem</h3>
+                    <p>Fomos criados a partir de um projeto realizado pelos professores André e Reginaldo da ETE José Joaquim da Silva Filho, que tinha como principal objetivo apresentar para os alunos de forma teórica e prática, a organização e realização de um site com a utilização de HTML, CSS e Java Script, para as matérias semestrais de Engenharia de Software e Tecnologia em Desenvolvimento Web.</p>
+            </main>
 
-    </article>
+        </article>
 
-    <div class="apoio">
-        <section><img src="images/logo-ete.png" alt="" style="width: 100%; height: 100%;"></section>
+        <div class="apoio">
+            <section><img src="images/logo-ete.png" alt=""></section>
+            <section>
+                <h3>Integrantes</h3>
+            </section>
+        </div>
     </div>
 
     <footer>
@@ -117,6 +135,13 @@
           <p>Telefone: (00) 1234-5678</p>
           <p>Email: contato@exemplo.com</p>
         </div>
+        <section class="redes-sociais">
+            <p>Nossas redes</p>
+            <img src="images/instagram.png" alt="">
+            <img src="images/facebook.png" alt="">
+            <img src="images/linkedin.png" alt="">
+            <img src="images/whatsapp.png" alt="">
+          </section>
         <p class="copyright">&copy; 2024 Enjoy Cursos</p>
       </footer>
     

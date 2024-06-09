@@ -7,24 +7,20 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width:768px)">
     <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width:769px)">
-    <link rel="stylesheet" href="styles/estilo-cadastro.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/slick.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
-    <!--codigo comum como menu e cabelho-->
+    <script src="scripts/jquery-3.7.1.min.js" defer></script>
+    <script src="scripts/slick.min.js" defer></script>
     <script src="scripts/btn-eventos.js" defer></script>
-    <!--codigo login e cadastro-->
-    <script src="scripts/eventos-login-cadastro.js" defer></script>
-    <!--Adição do jquery e maskplugin-->
-    <script src="scripts/jquery-3.7.1.min.js"></script>
-    <script src="scripts/jquery.mask.min.js"></script>
-    <script src="scripts/jquery.validate.min.js"></script>
-    
+    <script src="scripts/slider-home.js" defer></script>
+
 </head>
 <body>
     <header class="cabecalho">
-        <div class="logo"><p>Enjoy</p><div class="logo-img"><a href="index.html"><img src="images/logo-enjoycursos.webp" alt="Logo Enjoy-Cursos"></div></a><p>Cursos</p></div>
+      <div class="logo"><p>Enjoy</p><div class="logo-img"><a href="index.html"><img src="images/logo-enjoycursos.webp" alt="Logo Enjoy-Cursos"></div></a><p>Cursos</p></div>
 
         
 
@@ -33,7 +29,7 @@
                 <li><a href="index.html">Início</a></li>
                 <li><a href="categorias.html">Categorias</a></li>
                 <li><a href="certificados.html">Certificações</a></li>
-                <li><a href="chat-mensagens.html">Chat de mensagens</a></li>
+                <li><a href="chat-mensagens.html" style="border-bottom: 3px solid white;">Chat de mensagens</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="ajuda.html">Ajuda</a></li>
             </ul>
@@ -44,23 +40,9 @@
     </header>
 
     <div class="conteudo-principal">
-      <main>
-          <div class="formulario-container">
-            <h3>Bem-vindo(a) de volta!</h3>
-            <p>Ainda não tem uma conta? <a href="cadastro.html">Criar conta.</a></p>
-            <form id="formulario-cadastro" action="formulario.php" method="POST">
-
-              <input type="email" id="email" name="email" placeholder="Email" required>
-
-              <input type="password" id="senha" name="senha" placeholder="Senha" required>
-
-              <button id="btn-cadastrar" type="submit">Entra</button>
-
-            </form>
-            
-          </div>
-      </main>
+      
     </div>
+    
 
     <footer>
         <div class="footer-links">
@@ -84,11 +66,6 @@
           <img src="images/whatsapp.png" alt="">
         </section>
         <p class="copyright">&copy; 2024 Enjoy Cursos</p>
-    </footer>
-        
-    </script>
-    <script>
-
-    </script>
+      </footer>
 </body>
 </html>

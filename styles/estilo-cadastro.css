@@ -7,8 +7,13 @@
 
 .formulario-container h3 {
     font-weight: 900;
-    font-size: 28px;
+    font-size: 32px;
+    margin-top: 25px;
     margin-bottom: 25px;
+}
+
+.formulario-container p {
+    margin-bottom: 50px;
 }
 
 #formulario-cadastro {
@@ -39,7 +44,8 @@
     border: 3px solid blue;
     background: none;
     font-weight: 900;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 80px;
 }
 
 #formulario-cadastro button:hover {
