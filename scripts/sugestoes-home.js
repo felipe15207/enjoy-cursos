@@ -6,5 +6,5 @@ let suggestions = [
     "Redação Técnica", "Inteligência Artificial", "Bioquímica", 
     "Geometria Analítica", "Interpretação de Textos", "Banco de Dados", 
     "Química Analítica", "Teoria dos Números", "Produção Textual", 
-    "Engenharia de Software", "Físico-Química"
+    "Engenharia de Software", "Físico-Química".
 ];

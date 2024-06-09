@@ -22,8 +22,10 @@ $smtp->bind_param("ssssss",$nome, $email, $cpf, $telefone, $datanascimento, $sen
 
 if($smtp->execute()){
     echo "Dados cadastrados com sucesso!";
+    header('Location: login.html');
 }else {
     echo "Falha no cadastramento...".$smtp->error;
+    header('Location: cadastro.html');
 }
 
 $smtp->close();
