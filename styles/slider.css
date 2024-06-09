@@ -1,38 +1,69 @@
-
-.slider-carrossel {
-    width: 100%;
-    height: 320px;
-    position: relative;
-    overflow: hidden;
-}
-
 .slider-container {
-    width: 400%;
-    height: 320px;
-    display: flex;
+    position: relative;
+    width: 100%;
+    height: 200px;
 }
 
-#slider-btn-next, #slider-btn-previous {
-    width: 50px;
+.slider-container img {
+    width: 100%;
+    height: 200px;
+}
+
+/* Estilizando as setas */
+.btn-prev,
+.btn-next {
+    width: 25px;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
     position: absolute;
-    font-size: 26px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
-    opacity: 0.5;
-    border: none;
+    border: none; /* Remover borda padrão */
+    font-size: 20px; /* Tamanho da fonte */
+    padding: 10px 20px; /* Acolchoamento interno */
+    cursor: pointer; /* Indicar que é clicável */
+    top: 0;
 }
 
-#slider-btn-next {
+.btn-prev img,
+.btn-next img{
+    width: 20px;
+    height: 20px;
+}
+
+.btn-prev {
+    
+}
+
+.btn-next {
     right: 0;
 }
 
-.slider-box-imagem {
-    width: 25%;
-    height: 320px;
-}
 
-.slider-box-imagem  img {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
+/* Estilizando os indicadores */
+  .slick-dots {
+    position: absolute; /* Posicionamento absoluto */
+    bottom: 5px; /* Posição inferior */
+    left: 50%; /* Posicionado no centro horizontal */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+}
+      
+.slick-dots li {
+    display: inline-block; /* Exibir como bloco em linha */
+    margin: 0 18px; /* Margem entre os indicadores */
+}
+      
+.slick-dots li button {
+    width: 15px; /* Largura do indicador */
+    height: 15px; /* Altura do indicador */
+    border-radius: 10px;
+    background-color: #ccc; /* Cor de fundo cinza */
+    border: none; /* Remover borda padrão */
+    cursor: pointer; /* Indicar que é clicável */
+    font-size: 0;
+}
+      
+.slick-dots li.slick-active button {
+    background-color: #010175; /* Cor de fundo verde para o indicador ativo */
 }

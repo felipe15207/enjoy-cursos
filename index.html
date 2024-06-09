@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width:768px)">
     <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width:769px)">
     <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/slick.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script defer src="scripts/btn-eventos.js"></script>
+    <script src="scripts/jquery-3.7.1.min.js" defer></script>
+    <script src="scripts/slick.min.js" defer></script>
+    <script src="scripts/btn-eventos.js" defer></script>
+    <script src="scripts/slider-home.js" defer></script>
+
 </head>
 <body>
     <header class="cabecalho">
@@ -24,8 +29,8 @@
                 <li><a href="index.html" style="border-bottom: 3px solid white;">Início</a></li>
                 <li><a href="">Categorias</a></li>
                 <li><a href="">Certificações</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Acessibilidade</a></li>
+                <li><a href="">Chat de mensagens</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="">Ajuda</a></li>
             </ul>
         </nav>
@@ -37,27 +42,12 @@
         <header>
             <section class="slider-carrossel">
                 <div class="slider-container">
-
-                        <button id="slider-btn-previous">&lt;</button>
-                        <button id="slider-btn-next">&gt;</button>
-
-                    <div class="slider-box-imagem">
-                        <a href=""><img src="images/slide-item1.png" alt=""></a>
-                        <button id="slider-btn-um"></button>
-                    </div>
-
-                    <div class="slider-box-imagem">
-                        <a href=""><img src="images/slide-item2.png" alt=""></a>
-                        <button id="slider-btn-dois"></button>
-                    </div>
-
-                    <div class="slider-box-imagem">
-                        <a href=""><img src="images/slide-item3.png" alt=""></a>
-                        <button id="slider-btn-tres"></button>
-                    </div>
-
+                  <img src="images/slide-item1.png" alt="">
+                  <img src="images/slide-item2.png" alt="">
+                  <img src="images/slide-item3.png" alt="">
                 </div>
             </section>
+            <ul class="slider-pagination"></ul>
         </header>
         <main>
             <section class="feed">
@@ -100,7 +90,7 @@
           <ul>
             <li><a href="#">Termos de Uso</a></li>
             <li><a href="#">Política de Privacidade</a></li>
-            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
             <li><a href="#">Contato</a></li>
           </ul>
         </div>
@@ -111,6 +101,5 @@
         </div>
         <p class="copyright">&copy; 2024 Enjoy Cursos</p>
       </footer>
-    
 </body>
 </html>

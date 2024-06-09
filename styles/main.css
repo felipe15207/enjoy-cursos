@@ -173,6 +173,10 @@ footer {
     color: #fff;
     text-decoration: none;
   }
+
+  .footer-links ul li a:hover {
+    color: #0303ff;
+  }
   
   .contact-info {
     margin-top: 20px;
