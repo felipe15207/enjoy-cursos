@@ -71,6 +71,12 @@
   justify-content: center;
 }
 
+/*página ajuda*/
+.pesquisa-container h1{
+  text-align: center;
+  font-size: 18px;  
+}
+
 /*rodape da pagina*/
 
 footer {

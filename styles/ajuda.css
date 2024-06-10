@@ -9,8 +9,8 @@
   border-radius: 50px;
 }
 
-.pesquisa-container h2{
-  color: #010175;
+.pesquisa-container h1{
+  line-height: 30px;  
 }
 
 .pesquisa-container .pesquisa{
@@ -77,4 +77,30 @@
   font-size: 20px;
   color: #010175;
   cursor: pointer;
+}
+
+h1.duvidas {
+  margin-top: 150px;
+  margin-bottom: 40px;
+  padding-inline-start: 80px;
+}
+
+.duvida-container {
+  width: 50%;
+  margin-left: 20%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+.duvida-container:hover {
+  background-color: #010175;
+  color: white;
+}
+
+.duvida-container h2 {
+  line-height: 40px;
 }

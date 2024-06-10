@@ -99,6 +99,7 @@ header.cabecalho {
   right: 25px;
   border-radius: 50%;
   display: flex;
+  cursor: pointer;
 }
 
 .user-container:hover {
@@ -109,6 +110,30 @@ header.cabecalho {
   border-radius: 50%;
   width: 100%;
   height: 100%;
+}
+
+.caixa-login-cadastro {
+  width: 120px;
+  height: 120px;
+  background-color: #333;
+  position: absolute;
+  top: 95px;
+  right: 5px;
+  display: none;
+}
+
+.caixa-login-cadastro a button {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  font-weight: 900;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.caixa-login-cadastro #cadastro-btn button {
+  background-color: black;
+  color: white;
 }
 
 /*botao de login ou cadastro*/
