@@ -1,6 +1,10 @@
 <?php
 
-$
+$server = 'localhost';
+$usuario = 'root';
+$senhabd = '';
+$database = 'enjoy_cursos_bd';
+$conectar_bd = new mysqli($server, $usuario, $senhabd, $database);
 
 
 /*$host = "localhost";

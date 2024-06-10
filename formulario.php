@@ -1,4 +1,5 @@
 <?php
+include('conexao.php');
 
 $nome = $_POST['nome'];
 $email = $_POST['email'];
@@ -7,14 +8,19 @@ $telefone = $_POST['telefone'];
 $datanascimento = $_POST['datanascimento'];
 $senha = $_POST['senha'];
 
-$server = 'localhost';
-$usuario = 'root';
-$senhabd = '';
-$database = 'enjoy_cursos_bd';
-$conectar_bd = new mysqli($server, $usuario, $senhabd, $database);
 
 if($conectar_bd->connect_error){
     die("Falha ao conectar ao banco de dados: ".$conectar_bd->connect_error);
+}
+
+$busca = "SELECT * FROM aluno WHERE email_aluno = '$email' or cpf_aluno = '$cpf' ";
+
+$valida_existencia = $conectar_bd->query($busca);
+print_r($valida_existencia);
+
+if(mysqli_num_rows($valida_existencia) > 0){
+    $conectar_bd->close();
+    header('location: cadastro.html');
 }
 
 $smtp = $conectar_bd->prepare("INSERT INTO aluno (nome_aluno,email_aluno,cpf_aluno,telefone_aluno,data_nascimento_aluno,senha_aluno) VALUES (?,?,?,?,?,?)");
